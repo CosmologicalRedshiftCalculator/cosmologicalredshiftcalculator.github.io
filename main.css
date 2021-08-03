@@ -1,0 +1,11 @@
+:root {
+    --red: #ff0000;
+}
+
+body, button, input[type="number"] {
+    font-family: serif;
+}
+
+/*input[type="number"]{
+    color: green;
+}*/

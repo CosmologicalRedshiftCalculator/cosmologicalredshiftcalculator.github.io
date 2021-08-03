@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cosmological Redshift Calculator</title>
+		<link rel="stylesheet" href="main.css">
+	</head>
+
+	<body>
+
+		<h1>Cosmological Redshift Calculator</h1>
+		<p>This was created by Neha Deshpande for the final project for ASTR 2105 Cosmology: Our Universe.</p>
+
+		<!-- This project takes in the input of  -->
+        <p>The input for this calculator is the initial distance between an object and the Earth, the initial wavelength of a photon, and the Hubble constant. The output of the calculator is the current distance to the object, the observed wavelength, and the distance traveled by the photon.</p>
+
+
+
+		<p>Initial distance between an object and the Earth: (unit: megaparsec)</p>
+		<input type="number" id="firstInput" value="2">
+
+		<p>Initial wavelength of the photons: (unit: kilometers)</p>
+		<input type="number" id="secondInput" value="2">
+
+		<p>Hubble constant: (unit: kilometers per second per megaparsec)</p>
+		<input type="number" id="thirdInput" value="2">
+
+
+		<p>Click the button to calculate stuff!</p>
+
+		<button onclick="calculate()">Calculate!</button>
+		
+
+		<p id="firstOutput">Current distance to object: N/A</p>
+		<p id="secondOutput">Observed wavelength: N/A</p>
+		<p id="thirdOutput">Distance travelled by photon: N/A</p>
+
+		<button onclick="reset()">Reset all values</button>
+
+        <p>For more information about cosmological redshift, click on the following links!</p>
+        <a href="https://www.google.com">incredible</a>
+
+
+		<script src="app.js"></script>
+		<noscript>You need to enable JavaScript to view the full site.</noscript>
+
+	</body>
+</html>
