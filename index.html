@@ -9,11 +9,10 @@
 	</head>
 
 	<body>
-
 		<h1>Cosmological Redshift Calculator</h1>
 		<p>This calculator was created by Neha Deshpande for the final project for ASTR 2105 Cosmology: Our Universe.</p>
 
-        <p>The input for this calculator is the initial distance between an object and the Earth, the initial wavelength of a photon, and the Hubble constant. The output of the calculator is the current distance to the object, the observed wavelength, and the distance traveled by the photon.</p>
+		<p>The input for this calculator is the initial distance between an object and the Earth, the initial wavelength of a photon, and the Hubble constant. The output of the calculator is the current distance to the object, the observed wavelength, and the distance traveled by the photon.</p>
 
 
 
@@ -21,29 +20,45 @@
 		<input type="number" id="firstInput" value="600">
 
 		<p>Initial wavelength of the photons: (unit: kilometers)</p>
-		<input type="number" id="secondInput" value="0.000000001">
+		<input type="number" id="secondInput" value="1e-9">
 
 		<p>Hubble constant: (unit: kilometers per second per megaparsec)</p>
 		<input type="number" id="thirdInput" value="70">
 
-
-		<p>Click the button to calculate the outputs!</p>
+		<br>
+		<p class="space-before">Click the button to calculate the outputs!</p>
 
 		<button onclick="calculate()">Calculate!</button>
 		
 
-		<p id="firstOutput">Current distance to object: N/A</p>
+		<p id="firstOutput" class="space-before">Current distance to object: N/A</p>
 		<p id="secondOutput">Observed wavelength: N/A</p>
 		<p id="thirdOutput">Distance traveled by photon: N/A</p>
 
 		<button onclick="reset()">Reset all values</button>
 
-        <p>For more information about cosmological redshift, click on the following links!</p>
-        <a href="https://www.google.com">incredible</a>
+		<p class="space-before">Here are some equations and constants that were used, as well as constants for the speed of light, matter density parameter, and dark energy density parameter.</p>
+		<img src="equations.jpg" style="width:25%;">
+
+		<p class="space-before">For more information about cosmological redshift, click on the following links!</p>
+		
+		<a href="https://en.wikipedia.org/wiki/Hubble%27s_law">Hubble's Law</a>
+		<br>
+		<a href="http://www.astronomy.ohio-state.edu/~pogge/Ast162/Unit5/expand.html">The Expanding Universe</a>
+		<br>
+		<a href="https://astronomy.swin.edu.au/cosmos/c/cosmological+redshift">Cosmological Redshift</a>
+		<br>
+		<a href="http://burro.astr.cwru.edu/Academics/Astr328/Notes/Redshift/redshift.html">More redshift</a>
+		<br>
+		<a href="http://csep10.phys.utk.edu/OJTA2dev/ojta/c2c/galaxies/expanding/lookback_tl.html">Look-Back Times</a>
+		<br>
+		<a href="http://burro.case.edu/Academics/Astr222/Cosmo/Models/age2.html">Matter/Dark Energy Density Parameters</a>
+		<br>
+		<a href="http://astro.wku.edu/astr106/Hubble_intro.html">Hubble Distance</a>
 
 
 		<script src="app.js"></script>
-		<noscript>You need to enable JavaScript to view the full site.</noscript>
+		<noscript>Please enable JavaScript to view the full site.</noscript>
 
 	</body>
 </html>
