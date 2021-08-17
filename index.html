@@ -11,31 +11,30 @@
 	<body>
 
 		<h1>Cosmological Redshift Calculator</h1>
-		<p>This was created by Neha Deshpande for the final project for ASTR 2105 Cosmology: Our Universe.</p>
+		<p>This calculator was created by Neha Deshpande for the final project for ASTR 2105 Cosmology: Our Universe.</p>
 
-		<!-- This project takes in the input of  -->
         <p>The input for this calculator is the initial distance between an object and the Earth, the initial wavelength of a photon, and the Hubble constant. The output of the calculator is the current distance to the object, the observed wavelength, and the distance traveled by the photon.</p>
 
 
 
-		<p>Initial distance between an object and the Earth: (unit: megaparsec)</p>
-		<input type="number" id="firstInput" value="2">
+		<p>Initial distance between the object and the Earth: (unit: megaparsec)</p>
+		<input type="number" id="firstInput" value="600">
 
 		<p>Initial wavelength of the photons: (unit: kilometers)</p>
-		<input type="number" id="secondInput" value="2">
+		<input type="number" id="secondInput" value="0.000000001">
 
 		<p>Hubble constant: (unit: kilometers per second per megaparsec)</p>
-		<input type="number" id="thirdInput" value="2">
+		<input type="number" id="thirdInput" value="70">
 
 
-		<p>Click the button to calculate stuff!</p>
+		<p>Click the button to calculate the outputs!</p>
 
 		<button onclick="calculate()">Calculate!</button>
 		
 
 		<p id="firstOutput">Current distance to object: N/A</p>
 		<p id="secondOutput">Observed wavelength: N/A</p>
-		<p id="thirdOutput">Distance travelled by photon: N/A</p>
+		<p id="thirdOutput">Distance traveled by photon: N/A</p>
 
 		<button onclick="reset()">Reset all values</button>
 
