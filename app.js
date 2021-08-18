@@ -14,12 +14,7 @@ function calculate() {
 	var v = hubble_constant * distance;
 	var z = v / speed_of_light;
 	var y_observed = (z * y_emitted) + y_emitted;
-	var actual_distance = distance * (z+1)
-
-	console.log("v: " + v);
-	console.log("z: " + z);
-	console.log("y_observed: " + y_observed);
-	console.log("actual_distance: " + actual_distance);
+	var actual_distance = distance * (z + 1)
 
 	var integral_part_1 = antiderviative(z);
 	var integral_part_2 = antiderviative(0);

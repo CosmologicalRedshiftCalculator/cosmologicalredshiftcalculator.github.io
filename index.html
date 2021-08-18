@@ -12,8 +12,8 @@
 		<h1>Cosmological Redshift Calculator</h1>
 		<p>This calculator was created by Neha Deshpande for the final project for ASTR 2105 Cosmology: Our Universe.</p>
 
+		<h3 class="space-before">Input</h3>
 		<p>The input for this calculator is the initial distance between an object and the Earth, the initial wavelength of a photon, and the Hubble constant. The output of the calculator is the current distance to the object, the observed wavelength, and the distance traveled by the photon.</p>
-
 
 
 		<p>Initial distance between the object and the Earth: (unit: megaparsec)</p>
@@ -25,22 +25,36 @@
 		<p>Hubble constant: (unit: kilometers per second per megaparsec)</p>
 		<input type="number" id="thirdInput" value="70">
 
-		<br>
-		<p class="space-before">Click the button to calculate the outputs!</p>
+		
+		<h3 class="space-before">Click the button to calculate the outputs!</h3>
 
 		<button onclick="calculate()">Calculate!</button>
 		
+		<h3 class="space-before">Output</h3>
 
-		<p id="firstOutput" class="space-before">Current distance to object: N/A</p>
+		<p id="firstOutput">Current distance to object: N/A</p>
 		<p id="secondOutput">Observed wavelength: N/A</p>
 		<p id="thirdOutput">Distance traveled by photon: N/A</p>
 
 		<button onclick="reset()">Reset all values</button>
 
-		<p class="space-before">Here are some equations and constants that were used, as well as constants for the speed of light, matter density parameter, and dark energy density parameter.</p>
-		<img src="equations.jpg" style="width:25%;">
+		<h3 class="space-before">Equations and Constants</h3>
 
-		<p class="space-before">For more information about cosmological redshift, click on the following links!</p>
+		<p>The first equation used in this simulation is Hubble's Law, shown below. Hubble's Law describes a relationship between the distance of two objects in the universe, which is D, and how fast they are moving apart, which is v. The further apart the two objects are, the faster they are moving. The Hubble constant represents the constant of proportionality, which determines how fast they are moving based on the distance. The Hubble constant changes over time.</p>
+		<img src="one.jpg" style="width:25%;">
+
+		<p>The second and third equation define redshift, z, which is the increase in a photon's wavelength due to the source and the destination moving apart. In a flat universe, the formula for redshift is the velocity divided by the speed of light. Another way to get the value for redshift is to subtract the emitted wavelength value from the observed wavelength value, then divide by the emitted wavelength.</p>
+		<img src="two_three.jpg" style="width:25%;">
+
+		<p>The next formula determines the total distance traveled by a photon. Since the universe is expanding, we need to use an integral rather than simply multiplying. It is also important to take into account the values for the matter density parameter, and the dark energy density parameter.</p>
+		<img src="four.jpg" style="width:25%;">
+
+		<p>Here are some of the constants that were used in this calculator. First of all, the speed of light (c) is equal to 299792 kilometers per second. Next, we have two density parameters, which is the average density of matter and energy in the universe divided by the critical density. In this simulation, the matter density parameter is assumed to be equal to 0.3, and the dark energy density parameter is assumed to be equal to 0.7. The symbols and values for these constants are shown below.</p>
+		<img src="constants.jpg" style="width:25%;">
+
+		<h3 class="space-before">Resources</h3>
+
+		<p>For more information about cosmological redshift, click on the following links!</p>
 		
 		<a href="https://books.google.com/books/about/Foundations_of_Modern_Cosmology.html?id=s5MUDAAAQBAJ">Foundations of Modern Cosmology by Katherine A. Holcomb</a>
 		<br>
@@ -50,14 +64,15 @@
 		<br>
 		<a href="https://astronomy.swin.edu.au/cosmos/c/cosmological+redshift">Cosmological Redshift</a>
 		<br>
-		<a href="http://burro.astr.cwru.edu/Academics/Astr328/Notes/Redshift/redshift.html">More redshift</a>
+		<a href="http://burro.astr.cwru.edu/Academics/Astr328/Notes/Redshift/redshift.html">More Redshift</a>
 		<br>
 		<a href="http://csep10.phys.utk.edu/OJTA2dev/ojta/c2c/galaxies/expanding/lookback_tl.html">Look-Back Times</a>
 		<br>
 		<a href="http://burro.case.edu/Academics/Astr222/Cosmo/Models/age2.html">Matter/Dark Energy Density Parameters</a>
 		<br>
 		<a href="http://astro.wku.edu/astr106/Hubble_intro.html">Hubble Distance</a>
-
+		<br>
+		<a href="http://hyperphysics.phy-astr.gsu.edu/hbase/Astro/denpar.html">Density Parameter</a>
 		<script src="app.js"></script>
 		<noscript>Please enable JavaScript to view the full site.</noscript>
 
